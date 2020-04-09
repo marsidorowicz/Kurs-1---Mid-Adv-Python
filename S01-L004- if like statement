@@ -1,0 +1,15 @@
+import os
+
+path = r'e:\init.txt'
+os.remove(path)
+'''
+if os.path.isfile(path):
+    print("Plik %s istnieje" % path)
+else:
+    print("Tworzę plik %s" % path)
+    open(path,'x').close()
+    print("Plik został %s utworzony" % path)'''
+
+
+result = os.path.isfile(path) and open(path, 'x').close()
+print(result)
